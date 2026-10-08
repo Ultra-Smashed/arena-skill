@@ -3,8 +3,11 @@
   "description": "Dieselbe Aufgabe, viele Karten, ein K.-o.-Turnier. Am Ende bleibt eine Lösung. Ein Claude-Code-Skill.",
   "version": "1.0.0",
   "author": {
-    "name": "arena-skill"
+    "name": "Christopher Thanisch",
+    "url": "https://thanisch.co"
   },
+  "homepage": "https://thanisch.co",
+  "license": "MIT",
   "keywords": [
     "claude-code",
     "unteragenten",

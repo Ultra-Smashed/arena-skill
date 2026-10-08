@@ -3,7 +3,8 @@
   "name": "arena-skill",
   "description": "Turnier-Skill für Claude Code: eine Aufgabe, viele Strategien, eine Lösung.",
   "owner": {
-    "name": "arena-skill"
+    "name": "Christopher Thanisch",
+    "url": "https://thanisch.co"
   },
   "plugins": [
     {

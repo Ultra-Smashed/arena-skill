@@ -119,4 +119,13 @@ skills/arena/bracket.py        Stand und Rechnung, nur die Standardbibliothek
 skills/arena/strategies.json   15 Denkweisen, 12 Arbeitsabläufe, 12 Haltungen
 skills/arena/rubric.md         die fünf Kriterien der Richter
 tests/test_bracket.py          die Tests
+LICENSE                        MIT
 ```
+
+## Lizenz
+
+MIT. Kopieren, ändern, weitergeben. Der Hinweis auf das Copyright bleibt dabei stehen.
+
+## Credit
+
+Made by Christopher Thanisch, [thanisch.co](https://thanisch.co).
