@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "about": "Karten für /arena. Jeder Teilnehmer bekommt dieselbe Aufgabe und genau eine Karte: eine Denkweise, einen Arbeitsablauf, eine Haltung. 15 × 12 × 12 = 2160 verschiedene Karten. bracket.py verteilt sie ohne Doppelte und so gleichmäßig wie möglich. Einträge dürfen ergänzt werden. Ids bleiben innerhalb einer Liste eindeutig.",
+  "reasoning": [
+    {
+      "id": "ursachenkette",
+      "name": "Ursachenkette",
+      "how": "Benenn die beobachtbare Lage, dann die Ursache direkt davor, dann die Ursache davor. Bau die Lösung an der frühesten Stelle, an der ein Eingriff die Kette wirklich unterbricht."
+    },
+    {
+      "id": "widerlegung",
+      "name": "Widerlegung",
+      "how": "Formulier die Lösung als Behauptungen, die scheitern können. Such zu jeder Behauptung die Beobachtung, die sie umwerfen würde, und ändere die Lösung, bis diese Beobachtung nicht mehr trägt."
+    },
+    {
+      "id": "nachbargebiet",
+      "name": "Nachbargebiet",
+      "how": "Such eine geübte Praxis neben dem Thema, die dasselbe Reibungsproblem schon löst. Übernimm das Verfahren Stück für Stück und ersetz jedes Stück, das hier andere Kräfte hat."
+    },
+    {
+      "id": "sperrlinien",
+      "name": "Sperrlinien",
+      "how": "Schreib zuerst auf, was die Lösung auf keinen Fall tun, sagen oder auslösen darf. Alles andere entsteht innerhalb dieser Sperrlinien, und jede Sperrlinie bleibt im Text sichtbar."
+    },
+    {
+      "id": "zahlenbeispiel",
+      "name": "Zahlenbeispiel",
+      "how": "Rechne einen echten Fall mit konkreten Mengen, Namen und Zeiten durch, bevor du verallgemeinerst. Die allgemeine Lösung darf nur Schritte enthalten, die in diesem Fall schon vorgekommen sind."
+    },
+    {
+      "id": "frageliste",
+      "name": "Frageliste",
+      "how": "Stell die Fragen, die eine erfahrene Person stellen würde, bevor sie anfängt. Beantworte jede Frage mit dem, was die Aufgabe hergibt, und lass die Antworten die Gliederung bestimmen."
+    },
+    {
+      "id": "aussenseite",
+      "name": "Außenseite",
+      "how": "Nimm die Lesart, die eine knappe Mehrheit verwerfen würde, und führ sie so weit, bis sie an der Aufgabe selbst bricht oder steht. Behalt nur den Teil, der der Aufgabe besser dient als der übliche Weg."
+    },
+    {
+      "id": "folgewirkung",
+      "name": "Folgewirkung",
+      "how": "Zeichne, was sich bewegt, sobald die Lösung benutzt wird: direkt, eine Stufe später, und bei den Leuten, die nicht gefragt haben. Wähl die Fassung, deren spätere Stufen die Aufgabe nicht wieder öffnen."
+    },
+    {
+      "id": "bausteine",
+      "name": "Bausteine",
+      "how": "Teil die Aufgabe in Stücke, die sich getrennt lösen lassen. Löse jedes Stück zu Ende, setz sie zusammen und prüfe nur die Nahtstellen, an denen ein Stück dem nächsten etwas übergibt."
+    },
+    {
+      "id": "fertigzustand",
+      "name": "Fertigzustand",
+      "how": "Beschreib das Ergebnis so, als läge es schon vor: Form, Umfang, erste Handlung der lesenden Person. Geh von diesem Bild in Schritten zurück bis zur jetzigen Lage und schreib die Lösung in dieser Reihenfolge."
+    },
+    {
+      "id": "unsicherheit",
+      "name": "Unsicherheit",
+      "how": "Markier jede Wahl mit dem, was du sicher weißt, dem, was du annimmst, und dem, was die Wahl umwerfen würde. Bevorzuge die Fassung, die unter den meisten dieser Annahmen stehen bleibt."
+    },
+    {
+      "id": "gegenrede",
+      "name": "Gegenrede",
+      "how": "Schreib die stärkste Fassung der einen Richtung und die stärkste Fassung der entgegengesetzten Richtung. Die abgegebene Lösung ist die dritte Fassung: sie behält aus beiden nur, was die Aufgabe trägt."
+    },
+    {
+      "id": "belegpflicht",
+      "name": "Belegpflicht",
+      "how": "Jede Aussage stützt sich auf die Aufgabe, auf eine Datei, auf eine Zahl oder auf einen Schritt, den du geprüft hast. Was sich nicht stützen lässt, steht als Annahme mit dem Satz, der sie nötig macht."
+    },
+    {
+      "id": "rollentausch",
+      "name": "Rollentausch",
+      "how": "Beantworte die Aufgabe nacheinander aus drei Rollen, die zur Sache gehören, und lass jede Rolle die blinden Flecken der vorigen benennen. Die abgegebene Lösung ist die Fassung, in der diese Einwände eingearbeitet sind."
+    },
+    {
+      "id": "schrittfolge",
+      "name": "Schrittfolge",
+      "how": "Ordne die Lage zeitlich: was schon festliegt, was jetzt entschieden werden muss, was erst danach dran ist. Die Lösung enthält nur den Schritt, der jetzt dran ist, plus die Bedingung, unter der der nächste Schritt beginnt."
+    }
+  ],
+  "workflows": [
+    {
+      "id": "geruest",
+      "name": "Gerüst, dann ausformulieren",
+      "how": "Schreib ein Gerüst aus Überschriften und einem Satz pro Abschnitt. Gleich das Gerüst mit jeder Anforderung der Aufgabe ab, korrigiere es, und füll es erst danach."
+    },
+    {
+      "id": "pruefliste",
+      "name": "Prüfliste vor dem Text",
+      "how": "Schreib vor der Lösung die Prüfungen, an denen sie bestehen muss: bei Code die Fälle, sonst Sätze, die wahr oder falsch sein können. Schreib die Lösung und geh jede Prüfung daran durch."
+    },
+    {
+      "id": "schichten",
+      "name": "Drei Schichten Tiefe",
+      "how": "Schreib zuerst einen Absatz, der die ganze Antwort trägt. Erweitere in einem zweiten Durchgang nur die Stellen, an denen die Aufgabe mehr verlangt, und in einem dritten nur die Stellen, die sonst unbenutzbar bleiben."
+    },
+    {
+      "id": "zwei-wege",
+      "name": "Zwei Wege, einer bleibt",
+      "how": "Skizziere zwei Wege, die sich in der eigentlichen Entscheidung unterscheiden. Wähl an den Anforderungen der Aufgabe einen aus und arbeite nur diesen vollständig aus."
+    },
+    {
+      "id": "sammeln",
+      "name": "Sammeln, dann bündeln",
+      "how": "Trag zuerst alles zusammen, was die Aufgabe, die genannten Dateien und der Sachverhalt hergeben. Schreib die Lösung erst, wenn diese Sammlung steht, und nimm nichts hinein, was nicht daraus folgt."
+    },
+    {
+      "id": "engpass",
+      "name": "Engpass zuerst",
+      "how": "Finde die eine Stelle, an der die Aufgabe am ehesten scheitert. Löse diese Stelle vollständig, und bau den Rest der Lösung nur so weit, wie er diese Stelle trägt."
+    },
+    {
+      "id": "kuerzen",
+      "name": "Schreiben, dann kürzen",
+      "how": "Schreib die Lösung vollständig. Streich danach jeden Satz, ohne den die lesende Person dieselbe Handlung ausführen kann, und prüfe am Ende, dass keine Anforderung mitgestrichen wurde."
+    },
+    {
+      "id": "stoerfaelle",
+      "name": "Fünf Störfälle",
+      "how": "Schreib eine erste Lösung. Wirf fünf konkrete Störungen dagegen: falsche Eingaben, fehlende Angaben, Randmengen, Missverständnisse, späte Änderungen. Flick jede Störung, die wirklich trifft."
+    },
+    {
+      "id": "kernfassung",
+      "name": "Kernfassung, dann Anbau",
+      "how": "Stell die kleinste Fassung her, die die Aufgabe schon erfüllt. Häng weitere Teile nur an, wenn eine genannte Anforderung sonst offen bleibt, und prüfe nach jedem Anbau, dass die Kernfassung noch steht."
+    },
+    {
+      "id": "matrix",
+      "name": "Kleine Matrix",
+      "how": "List die ernsthaften Optionen und die Kriterien, die diese Aufgabe wirklich unterscheidet. Bewerte kurz, triff eine Wahl und schreib nur die gewählte Option aus, mit dem Kriterium, das sie entschieden hat."
+    },
+    {
+      "id": "luken",
+      "name": "Luken schließen",
+      "how": "List jede Stelle, an der die Aufgabe eine Angabe schuldig bleibt. Schließ jede Luke mit einer begründeten Annahme oder mit einem Zweig, und schreib die Lösung erst danach."
+    },
+    {
+      "id": "umbau",
+      "name": "Rohtext, dann Umbau",
+      "how": "Schreib zügig eine vollständige Rohfassung. Lies sie als Gliederung dessen, was du tatsächlich gesagt hast, zieh die Gliederung gerade und schreib die Lösung auf diese Gliederung um."
+    }
+  ],
+  "strategies": [
+    {
+      "id": "wenig-teile",
+      "name": "Wenig Teile",
+      "how": "Nimm das kleinste Gefüge, das die Aufgabe vollständig trägt. Jeder zusätzliche Teil, Schritt oder Begriff muss eine Anforderung erfüllen, die ohne ihn offen bliebe."
+    },
+    {
+      "id": "jede-zahl",
+      "name": "Jede Zahl belegt",
+      "how": "Prüfe Mengen, Grenzen, Namen und Reihenfolgen, bevor sie in der Lösung stehen. Wo eine Prüfung nicht möglich ist, steht die Zahl nicht, sondern die Annahme, die sie ersetzt."
+    },
+    {
+      "id": "naechster-griff",
+      "name": "Der nächste Griff",
+      "how": "Schreib aus der Lage der Person, die das gleich benutzt: was sie in der Hand hat, was sie kann, was der nächste Handgriff ist. Die Lösung beginnt bei diesem Handgriff."
+    },
+    {
+      "id": "raender",
+      "name": "Ränder zuerst",
+      "how": "Klär die Ränder, bevor die Mitte steht: leere Eingaben, Höchstwerte, fehlende Rechte, der Fall, den die Aufgabe nur nebenbei nennt. Die Mitte wird so gebaut, dass diese Ränder mitlaufen."
+    },
+    {
+      "id": "heute",
+      "name": "Heute benutzbar",
+      "how": "Wähl den Weg, der heute zu einem benutzbaren Ergebnis führt. Alles, was dieses Ergebnis nicht früher in die Hand gibt, bleibt draußen."
+    },
+    {
+      "id": "laut-scheitern",
+      "name": "Laut scheitern",
+      "how": "Nimm an, dass Angaben fehlen und Bedingungen widrig sind. Die Lösung soll im Fehlerfall sichtbar stoppen oder einen klaren Ausweg zeigen, statt still etwas Falsches zu liefern."
+    },
+    {
+      "id": "ein-blick",
+      "name": "Ein Blick",
+      "how": "Die lesende Person soll den nächsten Schritt sehen, ohne zu suchen. Kurze Sätze, eine erkennbare Reihenfolge, keine Formulierung, die erst übersetzt werden muss."
+    },
+    {
+      "id": "lueckenlos",
+      "name": "Lückenlos",
+      "how": "Jede Anforderung der Aufgabe hat eine sichtbare Stelle in der Lösung. Was die Aufgabe deutlich mitmeint, ist ebenfalls abgedeckt und an dieser Stelle benannt."
+    },
+    {
+      "id": "tausch",
+      "name": "Tausch benennen",
+      "how": "Benenn die echten Tausche, triff die Wahl anhand der engsten Bedingung in der Aufgabe, und schreib in einem Satz, was diese Wahl kostet."
+    },
+    {
+      "id": "halbes-jahr",
+      "name": "In einem halben Jahr",
+      "how": "Schreib so, dass jemand die Lösung in einem halben Jahr wieder aufnehmen kann: nachvollziehbare Entscheidungen, keine versteckten Abhängigkeiten, keine Falle im nächsten Änderungsschritt."
+    },
+    {
+      "id": "echte-namen",
+      "name": "Echte Namen",
+      "how": "Konkrete Dateien, Befehle, Werte, Rollen und Reihenfolgen. Ein Satz ohne einen solchen Anker wird ersetzt oder gestrichen."
+    },
+    {
+      "id": "engster-rahmen",
+      "name": "Der engste Rahmen",
+      "how": "Such die engste harte Grenze in der Aufgabe, ob Zeit, Werkzeug, Umfang oder Form. Diese Grenze entscheidet die Lösung, und weitere Wünsche ordnen sich ihr unter."
+    }
+  ]
+}

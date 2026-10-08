@@ -1,0 +1,14 @@
+{
+  "name": "arena-skill",
+  "description": "Dieselbe Aufgabe, viele Karten, ein K.-o.-Turnier. Am Ende bleibt eine Lösung. Ein Claude-Code-Skill.",
+  "version": "1.0.0",
+  "author": {
+    "name": "arena-skill"
+  },
+  "keywords": [
+    "claude-code",
+    "unteragenten",
+    "turnier",
+    "arena"
+  ]
+}

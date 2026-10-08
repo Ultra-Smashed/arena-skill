@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "arena-skill",
+  "description": "Turnier-Skill für Claude Code: eine Aufgabe, viele Strategien, eine Lösung.",
+  "owner": {
+    "name": "arena-skill"
+  },
+  "plugins": [
+    {
+      "name": "arena-skill",
+      "description": "Startet N Unter-Agenten auf dieselbe Aufgabe, jeder mit einer anderen Karte, und lässt sie in Angriff, Verteidigung und Richterspruch ausscheiden, bis eine Lösung bleibt.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
